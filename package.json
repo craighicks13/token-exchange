@@ -1,12 +1,12 @@
 {
   "name": "CHICKS Token",
   "version": "0.2.0",
-  "description": "Decentralized Ethereum Token Exchange",
-  "author": "me@craighicks.com",
+  "description": "Decentralized CHICKS Token Exchange",
+  "author": "craighicks13@gmail.com",
   "private": true,
   "homepage": ".",
   "engines": {
-    "node": "8.11.1"
+    "node": "12.22.9"
   },
   "dependencies": {
     "@truffle/hdwallet-provider": "^2.0.0",
