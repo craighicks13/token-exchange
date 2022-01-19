@@ -6,7 +6,7 @@
   "private": true,
   "homepage": ".",
   "engines": {
-    "node": "12.22.9"
+    "node": "14.x.y"
   },
   "dependencies": {
     "@truffle/hdwallet-provider": "^2.0.0",
