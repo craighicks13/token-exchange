@@ -32,7 +32,7 @@ export const loadWeb3 = async (dispatch) => {
     dispatch(web3Loaded(web3))
     return web3
   } else {
-    window.alert('Please install MetaMask')
+    window.alert('MetaMask is required to run this application. Please install MetaMask.')
     window.location.assign("https://metamask.io/")
   }
 }
@@ -55,7 +55,7 @@ export const loadToken = async (web3, networkId, dispatch) => {
     dispatch(tokenLoaded(token))
     return token
   } catch (error) {
-    console.error('Contract not deployed to the current network. Please select another network with Metamask.')
+    console.error('Contract not deployed to the current network. Please select the Kovan test network network with MetaMask.')
     return null
   }
 }
@@ -66,7 +66,7 @@ export const loadExchange = async (web3, networkId, dispatch) => {
     dispatch(exchangeLoaded(exchange))
     return exchange
   } catch (error) {
-    console.error('Contract not deployed to the current network. Please select another network with Metamask.')
+    console.error('Contract not deployed to the current network. Please select the Kovan test network network with MetaMask.')
     return null
   }
 }
